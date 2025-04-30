@@ -13,4 +13,4 @@ To replicate results from the paper, [download](https://drive.google.com/drive/f
 
 To custimize the adaptive process, tweak the hyperparameters defined in the script `main.py`.
 
-We highly recommend to create a python enviroment (https://www.freecodecamp.org/news/how-to-setup-virtual-environments-in-python/) and intall the libraries defined in requirements.txt to avoid errors due to library versions.
+We highly recommend to create a [python enviroment](https://www.freecodecamp.org/news/how-to-setup-virtual-environments-in-python/) and intall the libraries defined in `requirements.txt` to avoid possible errors due to versions conflict.
