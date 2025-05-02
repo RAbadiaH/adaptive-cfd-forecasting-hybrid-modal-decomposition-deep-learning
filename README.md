@@ -25,4 +25,4 @@ To custimize the adaptive process, tweak the hyperparameters defined in the scri
 * new_data_solver  -> S_1, Number of snapshots to use in the subsequent retrainings (look paper).
 * num_preds        -> P, Number of predictions computed by the DL model (look paper).
 
-To execute the adaptive process, simply run the command `python main.py`. Upon completion, the script will generate a PyTorch tensor saved as `{case_name}_predicted_ten.pt`. This output can be used to visualize the results using the Jupyter notebooks provided in the same repository: `plot_results_laminar.ipynb` and `plot_results_turbulent.ipynb`.
+To execute the adaptive process, simply run the command `python main.py`. Upon completion, the script will generate a PyTorch tensor saved as `{case_name}_predicted_ten.pt`. This output can be used to visualize the results using the Jupyter notebooks provided in this repository: `plot_results_laminar.ipynb` and `plot_results_turbulent.ipynb`.
