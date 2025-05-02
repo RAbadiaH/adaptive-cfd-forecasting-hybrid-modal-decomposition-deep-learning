@@ -13,8 +13,8 @@ device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cp
 
 #---------------------------- Set hyperparameters ----------------------------#
 """ Training Hyperparameters"""
-case_name           = 'JetLES' # 'JetLES' or 'cil3D' or 'vki'
-num_modes           = 5 # 13 vki, 5 jet, 6 cli3d
+case_name           = 'laminar' # 'JetLES' or 'laminar' or 'turbulent'
+num_modes           = 5 # 13 turbulent, 5 jet, 6 laminar
 epochs              = 1500
 batch_size          = 8
 
