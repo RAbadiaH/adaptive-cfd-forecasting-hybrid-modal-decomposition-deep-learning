@@ -15,8 +15,12 @@ To replicate results from the paper, first download the datasets used in this wo
 * The dataset corresponding to the laminar flow can be accessed [here](https://drive.google.com/drive/folders/1_MkWVuWWoE3hGKPT0FbCba234KJ06kQo) (Tensor.mat)
 * The dataset corresponding to the turbulent flow is available [here](https://github.com/mendezVKI/MODULO/tree/master/download_all_data_exercises).
 
-After downloading, specify the path in `load_data.py`.
+After downloading the datasets, specify their respective paths within the `load_data.py` file by updating the corresponding `mat73.loadmat(<PATH>)` lines to reflect the correct file locations.
 
 ### Running the adaptive framework
-To custimize the adaptive process, tweak the hyperparameters defined in the script `main.py`. Specifically the one shown below,
-* dfd
+To custimize the adaptive process, tweak the hyperparameters defined in the script `main.py`, which is the file that also executes the adaptive process. We recommend to tweak the following hyperparamenters.
+* case_name        -> 'laminar' or 'turbulent' is the by which the dataset have been identified in the `load_data.py` file.
+* num_modes        -> 5 # 13 turbulent, 6 laminar, Number of modes to retain.
+* initial_snap     -> S_0, Intial number of snapshots to train the model.
+* new_data_solver  -> S_1, Number of snapshots to use in the subsequent retrainings.
+* num_preds        -> P, Number of predictions computed by the DL model.
