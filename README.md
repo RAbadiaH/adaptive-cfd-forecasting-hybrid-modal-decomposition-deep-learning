@@ -21,6 +21,8 @@ After downloading the datasets, specify their respective paths within the `load_
 To custimize the adaptive process, tweak the hyperparameters defined in the script `main.py`, which is the file that also executes the adaptive process. We recommend to tweak the following hyperparamenters.
 * case_name        -> 'laminar' or 'turbulent' is the by which the dataset have been identified in the `load_data.py` file.
 * num_modes        -> 5 # 13 turbulent, 6 laminar, Number of modes to retain.
-* initial_snap     -> S_0, Intial number of snapshots to train the model.
-* new_data_solver  -> S_1, Number of snapshots to use in the subsequent retrainings.
-* num_preds        -> P, Number of predictions computed by the DL model.
+* initial_snap     -> S_0, Intial number of snapshots to train the model (look paper).
+* new_data_solver  -> S_1, Number of snapshots to use in the subsequent retrainings (look paper).
+* num_preds        -> P, Number of predictions computed by the DL model (look paper).
+
+To execute the adaptive process, simply run the command `python main.py`. Upon completion, the script will generate a PyTorch tensor saved as `{case_name}_predicted_ten.pt`. This output can be used to visualize the results using the Jupyter notebooks provided in the same repository: `plot_results_laminar.ipynb` and `plot_results_turbulent.ipynb`.
