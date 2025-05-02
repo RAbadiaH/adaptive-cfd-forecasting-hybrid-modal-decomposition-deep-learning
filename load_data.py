@@ -7,7 +7,7 @@ def load_data(case):
 
     print("\nLoading Data ...", end='\r')
     
-    if (case == 'cil3D'):
+    if (case == 'laminar'):
         f = mat73.loadmat('./Datasets/laminar_flow.mat')
         data_ten = f['Tensor']
         data_ten = data_ten[..., 100:]
@@ -18,7 +18,7 @@ def load_data(case):
         data_ten = np.transpose(data_ten, [1,2,0])
         data_ten = data_ten[None, ..., :2000]
     
-    elif (case == 'vki'):
+    elif (case == 'turbulent'):
         f = mat73.loadmat('./Datasets/turbulent_flow.mat')
         data_ten = f.get('Tensor')
         data_ten = data_ten[..., :2000]
