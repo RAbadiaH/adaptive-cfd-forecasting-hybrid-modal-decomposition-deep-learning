@@ -26,3 +26,5 @@ To custimize the adaptive process, tweak the hyperparameters defined in the scri
 * num_preds        -> P, Number of predictions computed by the DL model (look paper).
 
 To execute the adaptive process, simply run the command `python main.py`. Upon completion, the script will generate a PyTorch tensor saved as `{case_name}_predicted_ten.pt`. This output can be used to visualize the results using the Jupyter notebooks provided in this repository: `plot_results_laminar.ipynb` and `plot_results_turbulent.ipynb`.
+
+The code would also create a folder named `{case_name}_saved_models_{initial_snap}_{num_preds}_{new_data_solver}` to storage the weights saved from every time the POD-DL model is called. In this way, results from a previous run can easily be replicated by just ensuring the variables `{case_name}`, `{initial_snap}`, `{num_preds}` and `{new_data_solver}` are the same as before.
