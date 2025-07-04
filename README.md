@@ -9,7 +9,7 @@ Abstract:
 This work introduces, for the first time to the authors’ knowledge, a proof of concept for a fully data‑driven adaptive framework that stabilizes deep learning autoregressive forecasting models over long horizons to accelerate computational fluid dynamics (CFD) simulations. By training on precomputed CFD data, our approach predicts flow evolution for a given interval, then new CFD data are generated to update the model, ensuring stability over extended time horizons. Tested across three flow scenarios, from laminar to turbulent regimes, this methodology significantly reduces computational cost, of up to $80\%$, while preserving physics‐consistent accuracy. Its purely data‑driven nature makes it readily extensible to a wide range of applications. This method will be incorporated into ModelFLOWs-app’s next version release.
 
 ## Replication of Results
-> We strongly recommend setting up a [Python virtual enviroment](https://www.freecodecamp.org/news/how-to-setup-virtual-environments-in-python/) and installing the required libraries listed in the `requirements.txt` file (pip install -r requirements.txt) to prevent potential errors arising from version conflicts.
+> We strongly recommend setting up a [Python virtual enviroment](https://www.freecodecamp.org/news/how-to-setup-virtual-environments-in-python/) and installing the required libraries listed in the requirements.txt file (`pip install -r requirements.txt`) to prevent potential errors arising from version conflicts.
 
 To replicate results from the paper, first download the datasets used in this work.
 * The dataset corresponding to the laminar flow can be accessed [here](https://drive.google.com/drive/folders/1_MkWVuWWoE3hGKPT0FbCba234KJ06kQo) (Tensor.mat)
